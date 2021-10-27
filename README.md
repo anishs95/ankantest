@@ -23,12 +23,25 @@ Reactnative Project for Ankan Mobile App.
 3. npm install
 4. expo start
 
+## Scripts
+
+"scripts": {
+"android": "react-native run-android",
+"ios": "react-native run-ios",
+"start": "npm run env -- prod && react-native start",
+"start:dev": "npm run env -- dev && react-native start --reset-cache",
+"env": "node ./env/set-env.js",
+"build": "tsc -p ./tsconfig.json",
+"build:web": "expo build:web",
+"clean": "rimraf ./dist ./web-build",
+"lint": "tslint -c ./tslint.json ./src/\*_/_.{ts,tsx}",
+"changelog": "conventional-changelog -i ./CHANGELOG.md -s",
+"postinstall": "jetify"
+},
+
 ![Ankan Material](https://camo.githubusercontent.com/f0487d92194f3c685213539c53e9784113cd8a4b/68747470733a2f2f692e696d6775722e636f6d2f58384f344748622e706e67)
 
 ![Preview](https://i.imgur.com/2E2nWHc.jpg)
-
-[<img src="http://i.imgur.com/7IxtMV0.png" width="200"/>][link:app-store]
-[<img src="http://i.imgur.com/pxFfB0S.png" width="200"/>][link:google-play]
 
 ## Key features:
 
