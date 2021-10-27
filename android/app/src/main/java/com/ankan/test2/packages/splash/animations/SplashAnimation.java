@@ -1,4 +1,4 @@
-package com.akveo.kittenTricks.packages.splash.animations;
+package com.ankan.test2.packages.splash.animations;
 
 import android.view.animation.Animation;
 

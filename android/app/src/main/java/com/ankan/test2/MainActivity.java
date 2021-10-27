@@ -1,4 +1,4 @@
-package com.akveo.kittenTricks;
+package com.ankan.test2;
 
 import android.content.Context;
 import android.content.Intent;
@@ -8,7 +8,7 @@ import com.facebook.react.ReactActivity;
 import com.facebook.react.ReactActivityDelegate;
 import com.facebook.react.ReactRootView;
 import com.swmansion.gesturehandler.react.RNGestureHandlerEnabledRootView;
-import com.akveo.kittenTricks.packages.splash.SplashScreen;
+import com.ankan.test2.packages.splash.SplashScreen;
 
 public class MainActivity extends ReactActivity {
 
@@ -41,7 +41,7 @@ public class MainActivity extends ReactActivity {
   }
 
   @Override protected String getMainComponentName() {
-    return "KittenTricks";
+    return "AnkanAppTest";
   }
 
   public static void start(Context context) {

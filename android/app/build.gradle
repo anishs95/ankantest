@@ -128,7 +128,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.akveo.kittenTricks"
+        applicationId "com.ankan.test2"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 6
