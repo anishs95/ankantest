@@ -1,11 +1,10 @@
-import React from 'react';
-import { ImageStyle } from 'react-native';
-import { Icon, IconProps, Input } from '@ui-kitten/components';
+import React from "react";
+import { ImageStyle } from "react-native";
+import { Icon, IconProps, Input } from "@ui-kitten/components";
 
-const DEFAULT_ICON: string = 'star';
+const DEFAULT_ICON: string = "star";
 
 export const IconShowcase = (props: IconProps): React.ReactElement => {
-
   const iconRef = React.useRef();
   const [currentIcon, setCurrentIcon] = React.useState<string>(DEFAULT_ICON);
   let inputValue: string = DEFAULT_ICON;
@@ -31,22 +30,17 @@ export const IconShowcase = (props: IconProps): React.ReactElement => {
   };
 
   const renderIcon = (style: ImageStyle): React.ReactElement => (
-    <Icon
-      {...props}
-      {...style}
-      ref={iconRef}
-      name={currentIcon}
-    />
+    <Icon {...props} {...style} ref={iconRef} name={currentIcon} />
   );
 
   return (
     <Input
       style={{ flex: 1 }}
-      placeholder='Type icon name'
-      autoCapitalize='none'
+      placeholder="Type icon name"
+      autoCapitalize="none"
       autoCorrect={false}
-      caption='Unfocus to change icon'
-      captionIcon={renderIcon}
+      caption="Unfocus to change icon"
+      //  captionIcon={renderIcon}
       accessoryRight={renderIcon}
       onChangeText={onInputChangeText}
       onBlur={onInputBlur}

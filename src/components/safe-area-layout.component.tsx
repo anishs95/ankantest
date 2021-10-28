@@ -1,17 +1,15 @@
-import React from 'react';
-import {
-  useSafeAreaInsets,
-} from 'react-native-safe-area-context';
+import React from "react";
+import { useSafeAreaInsets } from "react-native-safe-area-context";
 import {
   StyledComponentProps,
   LayoutProps,
   Layout,
   useTheme,
-} from '@ui-kitten/components';
+} from "@ui-kitten/components";
 
-type Inset = 'top' | 'bottom';
+type Inset = "top" | "bottom";
 
-export interface SafeAreaLayoutProps extends StyledComponentProps, LayoutProps {
+export interface SafeAreaLayoutProps extends LayoutProps {
   insets?: Inset;
   children?: React.ReactNode;
 }
@@ -23,7 +21,8 @@ export const SafeAreaLayout: React.FC<SafeAreaLayoutProps> = ({
   const theme = useTheme();
   const insetsConfig = useSafeAreaInsets();
 
-  const backgroundColor: string = theme[`background-basic-color-${props.level}`];
+  const backgroundColor: string =
+    theme[`background-basic-color-${props.level}`];
 
   return (
     <Layout
@@ -32,8 +31,8 @@ export const SafeAreaLayout: React.FC<SafeAreaLayoutProps> = ({
         props.style,
         backgroundColor && { backgroundColor },
         {
-          paddingTop: insets === 'top' ? insetsConfig.top : 0,
-          paddingBottom: insets === 'bottom' ? insetsConfig.bottom : 0,
+          paddingTop: insets === "top" ? insetsConfig.top : 0,
+          paddingBottom: insets === "bottom" ? insetsConfig.bottom : 0,
         },
       ]}
     />

@@ -16,10 +16,10 @@ import {
   StarIcon,
   SwapIcon,
   HeartIcon,
-} from "../../components/icons";
-import { SafeAreaLayout } from "../../components/safe-area-layout.component";
-import { WebBrowserService } from "../../services/web-browser.service";
-import { AppInfoService } from "../../services/app-info.service";
+} from "../../../components/icons";
+import { SafeAreaLayout } from "../../../components/safe-area-layout.component";
+import { WebBrowserService } from "../../../services/web-browser.service";
+import { AppInfoService } from "../../../services/app-info.service";
 import { StackActions, CommonActions } from "@react-navigation/native";
 
 const version: string = AppInfoService.getVersion();
